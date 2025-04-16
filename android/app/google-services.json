@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "822107823206",
+    "project_id": "blind-date-jg",
+    "storage_bucket": "blind-date-jg.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822107823206:android:b48f56d84cf774ca1421a7",
+        "android_client_info": {
+          "package_name": "com.example.blind_date"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822107823206-nl85keleb2bga7knemp4gg0ga69l4eiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTD7TGPtykKTlMfz5XD0F8creyWryuiNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822107823206-nl85keleb2bga7knemp4gg0ga69l4eiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "822107823206-csuuf6d9s9teh7mg3knu26a969icj9oa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.meeting"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822107823206:android:33218f167bf55a001421a7",
+        "android_client_info": {
+          "package_name": "com.example.meeting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822107823206-8o1e2bs8op9v8e5bk3jfu2p76r23hqel.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.meeting",
+            "certificate_hash": "c6f24da16a3ca1765e6ca2036eb063a3029d236f"
+          }
+        },
+        {
+          "client_id": "822107823206-nl85keleb2bga7knemp4gg0ga69l4eiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTD7TGPtykKTlMfz5XD0F8creyWryuiNE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822107823206-nl85keleb2bga7knemp4gg0ga69l4eiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "822107823206-csuuf6d9s9teh7mg3knu26a969icj9oa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.meeting"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
