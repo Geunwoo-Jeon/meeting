@@ -5,21 +5,22 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "meeting",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "meeting (profile mode)",
+            "name": "main_app",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "profile"
+            "program": "lib/main_app/main.dart"
         },
         {
-            "name": "meeting (release mode)",
+            "name": "firestore_app",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "release"
+            "program": "lib/firestore_app/main.dart"
+        },
+        {
+            "name": "riverpod_app",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/riverpod_app/main.dart"
         }
     ]
 }
