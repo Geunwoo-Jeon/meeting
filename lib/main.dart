@@ -53,8 +53,9 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(title: const Text('Home Page')),
       body: const Center(child: Text('Home Page')),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          FirebaseAuth.instance.signOut();
+        onPressed: () async {
+          await FirebaseAuth.instance.signOut();
+          await GoogleSignIn().signOut();
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
