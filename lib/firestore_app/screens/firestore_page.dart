@@ -33,35 +33,31 @@ class _FirestorePageState extends State<FirestorePage> {
       appBar: AppBar(title: const Text('Firestore Example')),
       body: Column(
         children: [
-          Expanded(
-            child: SingleChildScrollView(
-              padding: const EdgeInsets.all(8.0),
-              child: Column(
-                children: [
-                  TextField(
-                    controller: _nameController,
-                    decoration: const InputDecoration(labelText: 'Name'),
-                  ),
-                  TextField(
-                    controller: _ageController,
-                    decoration: const InputDecoration(labelText: 'Age'),
-                    keyboardType: TextInputType.number,
-                  ),
-                  TextField(
-                    controller: _introductionController,
-                    decoration: const InputDecoration(
-                      labelText: 'Introduction',
-                    ),
-                    keyboardType: TextInputType.multiline,
-                    maxLines: null,
-                    minLines: 3,
-                  ),
-                  ElevatedButton(
-                    onPressed: _addUser,
-                    child: const Text('Add User'),
-                  ),
-                ],
-              ),
+          SingleChildScrollView(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: [
+                TextField(
+                  controller: _nameController,
+                  decoration: const InputDecoration(labelText: 'Name'),
+                ),
+                TextField(
+                  controller: _ageController,
+                  decoration: const InputDecoration(labelText: 'Age'),
+                  keyboardType: TextInputType.number,
+                ),
+                TextField(
+                  controller: _introductionController,
+                  decoration: const InputDecoration(labelText: 'Introduction'),
+                  keyboardType: TextInputType.multiline,
+                  maxLines: null,
+                  minLines: 3,
+                ),
+                ElevatedButton(
+                  onPressed: _addUser,
+                  child: const Text('Add User'),
+                ),
+              ],
             ),
           ),
           const Divider(),
