@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'firestore_page.dart';
+import 'package:go_router/go_router.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({super.key, required this.title});
-  final String title;
+  const LoginPage({super.key});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -28,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
+        title: Text('Login'),
       ),
       body: Center(
         child: Column(
@@ -36,13 +35,7 @@ class _LoginPageState extends State<LoginPage> {
           children: <Widget>[
             ElevatedButton(
               onPressed: () async {
-                bool isLoggedIn = await _login();
-                if (isLoggedIn) {
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => FirestorePage()),
-                  );
-                }
+                await _login();
               },
               child: const Text('Login'),
             ),
